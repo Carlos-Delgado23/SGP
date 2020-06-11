@@ -1,1 +1,120 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* Remove padding and margin
+---------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Body
+---------------------------------------------------------*/
+body {
+  font: 62.5%/1.5 'Lucida Grande', 'Lucida Sans', Tahoma, Verdana, sans-serif;
+  color: #000;
+}
+
+#wrapper {
+  width: 980px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+/* Font Sizing
+---------------------------------------------------------*/
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  font-size: 1.8em;
+}
+
+/* Clear and floats
+---------------------------------------------------------*/
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+/* Navbar
+---------------------------------------------------------*/
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00ccff;
+}
+
+nav a:active {
+  color: #0000f0;
+}
+
+/* Hero full-width image
+---------------------------------------------------------*/
+.hero-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url "https://pexels.com/photos/3998368/pexels-photo-3998368.png";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url "https://pexels.com/photos/3998368/pexels-photo-3998368.png";
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Header
+---------------------------------------------------------*/
+/* Footer
+---------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */
