@@ -11,6 +11,7 @@
 body {
   font: 62.5%/1.5 'Lucida Grande', 'Lucida Sans', Tahoma, Verdana, sans-serif;
   color: #000;
+  height: 100%;
 }
 
 #wrapper {
@@ -104,13 +105,43 @@ nav a:active {
 /* Hero full-width image
 ---------------------------------------------------------*/
 .hero-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url "https://pexels.com/photos/3998368/pexels-photo-3998368.png";
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url "https://pexels.com/photos/3998368/pexels-photo-3998368.png";
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  height: 948px;
+  background: url(/imgs/silhouette-sunset.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.contianer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contianer button {
+  background-color: #313131;
+  border-radius: 10px;
+  padding: 0.5rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contianer button:hover {
+  opacity: 0.8;
+}
+
+.contianer button a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Header
