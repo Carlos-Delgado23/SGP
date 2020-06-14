@@ -15,16 +15,15 @@
 ---------------------------------------------------------*/
 body {
   font: 62.5%/1.5 'Lucida Grande', 'Lucida Sans', Tahoma, Verdana, sans-serif;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   min-height: 100%;
 }
 
-#wrapper {
+.wrapper {
   width: 980px;
-  text-align: left;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
 }
 
 /* Font Sizing
@@ -146,10 +145,11 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 2rem;
 }
 
 .hero-contianer .hero-text h1 {
-  max-width: 35rem;
+  max-width: 20em;
 }
 
 .hero-contianer button {
@@ -178,8 +178,68 @@ p {
   color: #f9cd38;
 }
 
-/* Header
+/* Gallery
 ---------------------------------------------------------*/
+.gallery-container {
+  margin: 0 1rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery-container h1 {
+  font-size: 3rem;
+  margin: 2rem auto;
+}
+
+.gallery-container .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery-container .cards-container .card {
+  position: relative;
+  width: 24rem;
+  height: 32rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.gallery-container .cards-container .card img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  opacity: .6;
+}
+
+.gallery-container .cards-container .card h3 {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
 /* Footer
 ---------------------------------------------------------*/
 footer {
@@ -207,6 +267,7 @@ footer .footer-container {
 
 footer h5 {
   color: #fff;
+  font-size: 1em;
   font-weight: 200;
   text-align: center;
 }
@@ -230,6 +291,19 @@ footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .icon-wrapper {
@@ -254,6 +328,16 @@ footer .logo-div {
       flex-basis: 25%;
   position: relative;
   bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 footer .top-footer {
