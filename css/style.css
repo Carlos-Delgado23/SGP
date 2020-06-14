@@ -109,7 +109,7 @@ p {
 ---------------------------------------------------------*/
 .hero-image {
   position: relative;
-  height: 948px;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/imgs/silhouette-sunset.jpg) no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imgs/silhouette-sunset.jpg) no-repeat center;
   background-size: cover;
@@ -132,7 +132,7 @@ p {
 .hero-contianer .hero-text {
   color: #fff;
   font-family: "Playfair Display", serif;
-  height: 90%;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,6 +146,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero-contianer .hero-text h1 {
+  max-width: 35rem;
 }
 
 .hero-contianer button {
@@ -164,7 +168,7 @@ p {
 
 .hero-contianer button a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 1rem;
   text-decoration: none;
   text-transform: uppercase;
