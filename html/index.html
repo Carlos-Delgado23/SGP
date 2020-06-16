@@ -62,14 +62,16 @@
 
 
   <!--------- CONTACT FORM STARTS --------->
-  <div class="contact-form-container">
+  <div class="contact-container">
     <h1>Contact</h1>
-    <form action="SEND TO LINK" method="POST">
+    <form action="SEND TO LINK" method="POST" class="form-container">
       <!-- name -->
       <div class="name">
         <label>Name</label>
-        <input type="text" id="first-name" placeholder="First" autocomplete>
-        <input type="text" id="last-name" placeholder="Last" autocomplete>
+        <div class="name-inputs">
+          <input type="text" id="first-name" placeholder="First" autocomplete>
+          <input type="text" id="last-name" placeholder="Last" class="right" autocomplete>
+        </div>
       </div>
 
       <!-- email -->

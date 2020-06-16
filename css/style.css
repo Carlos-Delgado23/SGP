@@ -16,7 +16,7 @@
 body {
   font: 62.5%/1.5;
   font-family: 'Montserrat', sans-serif;
-  background-color: #000;
+  background-color: #171717;
   color: #fff;
   min-height: 100%;
 }
@@ -93,7 +93,7 @@ p {
 }
 
 .nav-container .nav-item:hover {
-  background-color: #000;
+  background-color: #171717;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -172,8 +172,8 @@ p {
 }
 
 .hero-contianer button:hover {
-  background-color: #000;
-  border: 2px solid #000;
+  background-color: #171717;
+  border: 2px solid #171717;
 }
 
 .hero-contianer button a {
@@ -207,6 +207,8 @@ p {
 
 .gallery-container h1 {
   font-size: 3rem;
+  letter-spacing: .8em;
+  padding-left: .8em;
   margin: 2rem auto;
 }
 
@@ -251,10 +253,76 @@ p {
   z-index: 1;
 }
 
+/* Contact Form
+---------------------------------------------------------*/
+.contact-container {
+  background-color: #efd300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 2rem auto;
+  text-transform: uppercase;
+}
+
+.contact-container h1 {
+  color: #171717;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  letter-spacing: .8em;
+  padding-left: .8em;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.contact-container .form-container {
+  background-color: #171717;
+  border: 2px solid #171717;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  width: 50em;
+}
+
+.contact-container .form-container > div {
+  margin: 1em;
+}
+
+.contact-container .form-container .name, .contact-container .form-container .email, .contact-container .form-container .phone,
+.contact-container .form-container .intrest, .contact-container .form-container .city,
+.contact-container .form-container .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  width: 20rem;
+}
+
 /* Footer
 ---------------------------------------------------------*/
 footer {
-  background-color: #000;
+  background-color: #171717;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -289,13 +357,13 @@ footer a {
 }
 
 footer .top-footer a:hover {
-  color: #f9cd38;
+  color: #efd300;
 }
 
 footer .icon-wrapper:hover {
-  color: #000;
-  background-color: #f9cd38;
-  border: #000;
+  color: #171717;
+  background-color: #efd300;
+  border: #171717;
 }
 
 footer ul {
