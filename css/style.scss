@@ -289,7 +289,7 @@ p {
     textarea, select {
       background-color: #202020;
       border: none;
-      border-radius: .3rem;
+      border-radius: 5px;
       color: #fff;
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
@@ -300,6 +300,10 @@ p {
     select {
       appearance: none;
       color: #cfcfcfde;
+    }
+
+    .fa-angle-down {
+      margin-left: .5em;
     }
 
     .intrest-location {
@@ -317,6 +321,30 @@ p {
       flex-direction: column;
       width: 90%;
     }
+
+    input[type=submit] {
+      background-color: #202020;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2em;
+      margin-top: 1.3em;
+      padding: .5em;
+      text-transform: uppercase;
+      width: 30%;
+      transition: 0.3s all;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $dark-color;
+      }
+    }
+
+    // input:-webkit-autofill {
+    //   box-shadow: 0 0 0px 1000px $primary-color inset;
+    //   -webkit-text-fill-color: $dark-color;
+    // }
 
   }
 

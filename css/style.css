@@ -335,7 +335,7 @@ p {
 .contact-container .form-container textarea, .contact-container .form-container select {
   background-color: #202020;
   border: none;
-  border-radius: .3rem;
+  border-radius: 5px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
@@ -348,6 +348,10 @@ p {
      -moz-appearance: none;
           appearance: none;
   color: #cfcfcfde;
+}
+
+.contact-container .form-container .fa-angle-down {
+  margin-left: .5em;
 }
 
 .contact-container .form-container .intrest-location {
@@ -371,6 +375,26 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+}
+
+.contact-container .form-container input[type=submit] {
+  background-color: #202020;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  margin-top: 1.3em;
+  padding: .5em;
+  text-transform: uppercase;
+  width: 30%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-container .form-container input[type=submit]:hover {
+  background-color: #efd300;
+  color: #171717;
 }
 
 /* Footer
