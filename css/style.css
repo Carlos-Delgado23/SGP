@@ -118,8 +118,8 @@ p {
 .hero-image {
   position: relative;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/imgs/silhouette-sunset.jpg) no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imgs/silhouette-sunset.jpg) no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/imgs/married-couple-dancing-at-wedding-black-and-white.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/imgs/married-couple-dancing-at-wedding-black-and-white.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
 }
@@ -158,7 +158,9 @@ p {
 }
 
 .hero-contianer .hero-text h1 {
+  font-size: 2em;
   max-width: 20em;
+  mix-blend-mode: difference;
 }
 
 .hero-contianer button {
@@ -201,15 +203,20 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   text-transform: uppercase;
 }
 
 .gallery-container h1 {
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
   letter-spacing: .8em;
   padding-left: .8em;
-  margin: 2rem auto;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 .gallery-container .cards-container {
@@ -296,18 +303,17 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem;
+  margin: 2rem auto 0 auto;
   padding: 2rem;
-  width: 50em;
+  width: 60%;
 }
 
 .contact-container .form-container > div {
-  margin: 1em;
+  margin: .5em;
 }
 
-.contact-container .form-container .name, .contact-container .form-container .email, .contact-container .form-container .phone,
-.contact-container .form-container .intrest, .contact-container .form-container .city,
-.contact-container .form-container .comment {
+.contact-container .form-container .name, .contact-container .form-container .email,
+.contact-container .form-container .phone, .contact-container .form-container .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +322,55 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  width: 20rem;
+  width: 90%;
+}
+
+.contact-container .form-container #first-name, .contact-container .form-container #last-name {
+  width: 48%;
+}
+
+.contact-container .form-container input[type=text],
+.contact-container .form-container input[type=tel],
+.contact-container .form-container input[type=email],
+.contact-container .form-container textarea, .contact-container .form-container select {
+  background-color: #202020;
+  border: none;
+  border-radius: .3rem;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-top: .3em;
+  padding: .8em;
+}
+
+.contact-container .form-container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #cfcfcfde;
+}
+
+.contact-container .form-container .intrest-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  width: 90%;
+}
+
+.contact-container .form-container #intrest {
+  width: 90%;
+}
+
+.contact-container .form-container .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
 }
 
 /* Footer

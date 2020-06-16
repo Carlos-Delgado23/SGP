@@ -116,7 +116,7 @@ p {
 .hero-image {
   position: relative;
   height: 100vh;
-  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/imgs/silhouette-sunset.jpg) no-repeat center;
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/imgs/married-couple-dancing-at-wedding-black-and-white.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
 }
@@ -143,7 +143,9 @@ p {
     margin: 0 2rem;
 
     h1 {
+      font-size: 2em;
       max-width: 20em;
+      mix-blend-mode: difference;
     }
   }
 
@@ -183,14 +185,17 @@ p {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
 
   h1 {
+    font-family: $playfair-font;
     font-size: 3rem;
     letter-spacing: .8em;
     padding-left: .8em;
-    margin: 2rem auto;
+    padding-top: 2rem;
+    text-align: center;
   }
 
   .cards-container {
@@ -258,22 +263,61 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+    margin: 2rem auto 0 auto;
     padding: 2rem;
-    width: 50em;
+    width: 60%;
 
     & > div {
-      margin: 1em;
+      margin: .5em;
     }
 
-    .name, .email, .phone, 
-    .intrest, .city, 
-    .comment {
+    .name, .email, 
+    .phone, .comment {
       display: flex;
       flex-direction: column;
       text-align: left;
-      width: 20rem;
+      width: 90%;
     }
+
+    #first-name, #last-name {
+      width: 48%;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    textarea, select {
+      background-color: #202020;
+      border: none;
+      border-radius: .3rem;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      margin-top: .3em;
+      padding: .8em;
+    }
+
+    select {
+      appearance: none;
+      color: #cfcfcfde;
+    }
+
+    .intrest-location {
+      display: flex;
+      text-align: left;
+      width: 90%;
+    }
+
+    #intrest {
+      width: 90%;
+    }
+
+    .location {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+
   }
 
 }
