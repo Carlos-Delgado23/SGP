@@ -21,7 +21,6 @@ $playfair-font: 'Playfair Display', serif;
     // Smooth-scroll  
 html {
   scroll-behavior: smooth;
-  // height: 100%;
 }
 
 
@@ -95,6 +94,7 @@ p {
 
   .nav-item{
     padding-top: 1rem;
+    transition: 0.3s all;
 
     &:hover {
       cursor: pointer;
@@ -107,6 +107,7 @@ p {
   li a{
     display: inline-block;
     padding: 0.8rem;
+    transition: 0.3s all;
   }
 
   a {
@@ -391,7 +392,7 @@ h2 {
       padding: .5em;
       text-transform: uppercase;
       width: 30%;
-      transition: 0.3s all;
+      transition: 0.5s all;
 
       &:hover {
         cursor: pointer;
@@ -435,7 +436,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 100%;
 
     .img-container {
@@ -480,22 +481,31 @@ footer {
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 1em 0 0 0;
   }
 
-  h5 {
+  small {
     color: #fff;
-    font-size: 1em;
+    // font-size: 1em;
     font-weight: 200;
     text-align: center;
+    margin-top: 1rem;
   }
 
   a {
     color: #fff;
     text-decoration: none;
   }
+
   .top-footer a:hover {
     color: $primary-color;
+  }
+
+  .footer-logo {
+    font-family: $playfair-font;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.2rem;
   }
 
   .icon-wrapper:hover{
@@ -513,16 +523,17 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .icon-wrapper {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 2.4em;
-    height: 2.4em;
-    width: 2.4em;
+    height: 2em;
+    width: 2em;
     display: flex;
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
   }
 
   .icon-wrapper i {
@@ -535,7 +546,7 @@ footer {
     bottom: .5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .top-footer {
@@ -545,6 +556,7 @@ footer {
       text-transform: uppercase;
     }
   }
+
   .bottom-footer {
     display: flex;
     justify-content: center;
@@ -553,12 +565,6 @@ footer {
       margin-bottom: .5em;
       margin-left: .3rem;
     }
-  }
-
-  .line {
-    width: 100%;
-    height: 1px;
-    background-color: #cfcfcf;
   }
 }
 

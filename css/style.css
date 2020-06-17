@@ -97,6 +97,8 @@ p {
 
 .nav-container .nav-item {
   padding-top: 1rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .nav-container .nav-item:hover {
@@ -109,6 +111,8 @@ p {
 .nav-container li a {
   display: inline-block;
   padding: 0.8rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .nav-container a {
@@ -429,8 +433,8 @@ h2 {
   padding: .5em;
   text-transform: uppercase;
   width: 30%;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .contact-container .form-container input[type=submit]:hover {
@@ -485,7 +489,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
@@ -542,14 +546,14 @@ footer .footer-container {
           justify-content: space-between;
   width: 95%;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 1em 0 0 0;
 }
 
-footer h5 {
+footer small {
   color: #fff;
-  font-size: 1em;
   font-weight: 200;
   text-align: center;
+  margin-top: 1rem;
 }
 
 footer a {
@@ -559,6 +563,13 @@ footer a {
 
 footer .top-footer a:hover {
   color: #efd300;
+}
+
+footer .footer-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.2rem;
 }
 
 footer .icon-wrapper:hover {
@@ -584,19 +595,22 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .icon-wrapper {
   color: #fff;
   border: 2px solid #fff;
   border-radius: 2.4em;
-  height: 2.4em;
-  width: 2.4em;
+  height: 2em;
+  width: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 footer .icon-wrapper i {
@@ -615,9 +629,9 @@ footer .logo-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .top-footer {
@@ -646,11 +660,5 @@ footer .bottom-footer a {
   margin-top: .5rem;
   margin-bottom: .5em;
   margin-left: .3rem;
-}
-
-footer .line {
-  width: 100%;
-  height: 1px;
-  background-color: #cfcfcf;
 }
 /*# sourceMappingURL=style.css.map */
