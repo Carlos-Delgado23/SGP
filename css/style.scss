@@ -96,6 +96,7 @@ p {
     padding-top: 1rem;
 
     &:hover {
+      cursor: pointer;
       background-color: $dark-color;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
@@ -113,6 +114,7 @@ p {
     text-decoration: none;
 
     &:hover {
+      cursor: pointer;
       color: $primary-color;
     }
   }
@@ -123,7 +125,7 @@ p {
 ---------------------------------------------------------*/
 .hero-image {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/imgs/married-couple-dancing-at-wedding-black-and-white.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
@@ -142,7 +144,7 @@ p {
   .hero-text {
     color: #fff;
     font-family: $playfair-font;
-    height: 80vh;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,9 +152,10 @@ p {
     margin: 0 2rem;
 
     h1 {
-      font-size: 2em;
-      max-width: 20em;
+      font-size: 2rem;
+      max-width: 100%;
       mix-blend-mode: difference;
+      line-height: 2rem;
     }
   }
 
@@ -192,7 +195,7 @@ p {
   flex-direction: column;
   align-items: center;
   min-height: 100%;
-  margin: 0 auto;
+  // margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
 
@@ -202,7 +205,8 @@ p {
     font-weight: 100;
     letter-spacing: .8em;
     padding-left: .8em;
-    padding-top: 2rem;
+    // padding-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
   }
 
@@ -212,14 +216,15 @@ p {
     justify-content: center;
     align-items: center;
     // flex-wrap: wrap;
-    // width: 90%;
+    width: 95%;
     // height: 60%;
-    margin: auto;
+    margin: auto auto 5rem auto;
+
 
     .card {
       position: relative;
       width: 24rem;
-      height: 32rem;
+      height: 42rem;
       // border: 2px solid #fff;
       // border-radius: 5px;
       margin: 0 .5em;
@@ -258,7 +263,7 @@ p {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin: 0 auto;
+  // margin: 0 auto;
   text-transform: uppercase;
 
   h1 {
@@ -267,7 +272,8 @@ p {
     font-size: 3rem;
     letter-spacing: .8em;
     padding-left: .8em;
-    padding-top: 2rem;
+    // padding-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
   }
 
@@ -278,7 +284,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: auto auto 5rem auto;
     padding: 2rem;
     // width: 60%;
     // height: 65%;
@@ -330,6 +336,10 @@ p {
 
     #intrest {
       width: 90%;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     .location {
@@ -352,6 +362,7 @@ p {
       transition: 0.3s all;
 
       &:hover {
+        cursor: pointer;
         background-color: $primary-color;
         color: $dark-color;
       }
@@ -367,9 +378,40 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
-  text-transform: uppercase;
+
+  .mission-statement {
+    // background-color: $primary-color;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-right: 3rem;
+    width: 60%;
+  }
+
+  h1 {
+    color: #fff;
+    font-family: $playfair-font;
+    font-size: 3rem;
+    letter-spacing: .8em;
+    padding-left: .8em;
+    // padding-top: 2rem;
+    margin-top: 3rem;
+    // text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 3rem;
+    border: 10px solid $primary-color;
+    // border-radius: 5px;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
 }
 
 /* Footer
