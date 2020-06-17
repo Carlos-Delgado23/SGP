@@ -11,14 +11,20 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body
 ---------------------------------------------------------*/
 body {
   font: 62.5%/1.5;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
   background-color: #171717;
   color: #fff;
-  min-height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .wrapper {
@@ -133,7 +139,6 @@ p {
           transform: translate(-50%, -50%);
   overflow: hidden;
   text-align: center;
-  font-weight: 200;
   text-transform: uppercase;
 }
 
@@ -174,8 +179,8 @@ p {
 }
 
 .hero-contianer button:hover {
-  background-color: #171717;
-  border: 2px solid #171717;
+  background-color: #efd300;
+  border: 2px solid #efd300;
 }
 
 .hero-contianer button a {
@@ -187,15 +192,13 @@ p {
 }
 
 .hero-contianer button a:hover {
-  color: #efd300;
+  color: #171717;
 }
 
 /* Gallery
 ---------------------------------------------------------*/
 .gallery-container {
   font-family: "Playfair Display", serif;
-  margin: 0 1rem;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,6 +209,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100%;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
 }
@@ -213,6 +218,7 @@ p {
 .gallery-container h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
+  font-weight: 100;
   letter-spacing: .8em;
   padding-left: .8em;
   padding-top: 2rem;
@@ -223,20 +229,20 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 
 .gallery-container .cards-container .card {
   position: relative;
   width: 24rem;
   height: 32rem;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  margin: 1rem;
+  margin: 0 .5em;
 }
 
 .gallery-container .cards-container .card img {
@@ -251,12 +257,14 @@ p {
 }
 
 .gallery-container .cards-container .card h3 {
+  font-size: 100%;
+  font-weight: 100;
   position: absolute;
   top: 47%;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  letter-spacing: .8em;
+  padding-left: .8em;
   z-index: 1;
 }
 
@@ -274,8 +282,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  margin: 2rem auto;
+  height: 100%;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
@@ -303,9 +311,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem auto 0 auto;
+  margin: auto;
   padding: 2rem;
-  width: 60%;
 }
 
 .contact-container .form-container > div {
@@ -339,8 +346,8 @@ p {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  margin-top: .3em;
-  padding: .8em;
+  margin-top: .3rem;
+  padding: .8rem;
 }
 
 .contact-container .form-container select {
@@ -350,8 +357,8 @@ p {
   color: #cfcfcfde;
 }
 
-.contact-container .form-container .fa-angle-down {
-  margin-left: .5em;
+.contact-container .form-container .fa-chevron-down {
+  margin-left: .5rem;
 }
 
 .contact-container .form-container .intrest-location {
@@ -395,6 +402,25 @@ p {
 .contact-container .form-container input[type=submit]:hover {
   background-color: #efd300;
   color: #171717;
+}
+
+/* About
+---------------------------------------------------------*/
+.about-container {
+  background-color: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  text-transform: uppercase;
 }
 
 /* Footer
