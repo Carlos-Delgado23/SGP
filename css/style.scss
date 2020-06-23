@@ -102,6 +102,12 @@ p {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
+
+    &:active {
+      background-color: $dark-color;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
   }
 
   li a{
@@ -117,6 +123,10 @@ p {
 
     &:hover {
       cursor: pointer;
+      color: $primary-color;
+    }
+
+    &:active {
       color: $primary-color;
     }
   }
@@ -178,6 +188,7 @@ h2 {
   }
 
   button {
+    font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -185,7 +196,7 @@ h2 {
     padding: 0.5rem 0;
     transition: 0.3s all;
 
-    &:hover {
+    &:hover, &:active {
       background-color: $primary-color;
       border: 2px solid $primary-color;
     }
@@ -197,7 +208,7 @@ h2 {
       text-decoration: none;
       text-transform: uppercase;
 
-      &:hover {
+      &:hover, &:active {
         color: $dark-color;
       }
     }
@@ -385,7 +396,7 @@ h2 {
       border-radius: 5px;
       color: #fff;
       font-family: 'Montserrat', sans-serif;
-      font-size: 1.2em;
+      // font-size: 1.2em;
       margin-top: 1.3em;
       padding: .5em;
       text-transform: uppercase;
@@ -394,6 +405,11 @@ h2 {
 
       &:hover {
         cursor: pointer;
+        background-color: $primary-color;
+        color: $dark-color;
+      }
+
+      &:active {
         background-color: $primary-color;
         color: $dark-color;
       }
@@ -494,7 +510,7 @@ footer {
     text-decoration: none;
   }
 
-  .top-footer a:hover {
+  .top-footer a:hover, .top-footer a:active {
     color: $primary-color;
   }
 
@@ -565,7 +581,84 @@ footer {
   }
 }
 
+/* Media Query
+---------------------------------------------------------*/
+$break-mobile: 480px;
+$break-tablet: 768px;
 
+@media screen and (max-width: $break-mobile){
+  .nav-container {
+    min-width: 22rem;
+  }
+
+  .gallery-container{
+    // max-height: 100%;
+
+    .cards-container {
+      flex-direction: column;
+
+      .card {
+        width: 90%;
+        height: 21rem;
+      }
+    }
+
+    h1{
+      font-size: 9vw;
+    }
+  }
+
+  .contact-container{
+    h1 {
+      max-height: 100%;
+      font-size: 9vw;
+    }
+
+    .form-container {
+      max-height: 100%;
+      width: 90%;
+      padding: 1rem;
+
+      .name, .email,
+      .phone, .comment {
+        width: 98%;
+      }
+
+      input[type=submit] {
+        margin-top: .8em;
+        margin-bottom: .2em;
+        width: 40%;
+      }
+    }
+  }
+
+  .about-container {
+    max-height: 100%;
+
+    h1 {
+      font-size: 9vw;
+    }
+
+    .about-content {
+      margin: 2rem auto;
+    }
+
+    p{
+      padding-top: 2rem;
+      width: 95%;
+    }
+  }
+
+  footer {
+    .top-footer {
+      flex-direction: column;
+
+      .logo-div, ul {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
 
 
 

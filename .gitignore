@@ -63,7 +63,7 @@ build/
 .vscode/
 
 # sass maps and cashe
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# .sass-cache/
+# *.css.map
+# *.sass.map
+# *.scss.map
