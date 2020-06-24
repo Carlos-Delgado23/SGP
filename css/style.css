@@ -264,6 +264,21 @@ h2 {
   margin-top: .5rem;
 }
 
+.gallery-container p {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-container p span:not(:last-child) {
+  border-right: 1px solid #ffe01b;
+  padding-right: 2rem;
+}
+
+.gallery-container p span:not(:first-child) {
+  border-left: 1px solid #ffe01b;
+  padding-left: 2rem;
+}
+
 .gallery-container .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -712,6 +727,12 @@ footer .bottom-footer a {
   .gallery-container h1 {
     font-size: 9vw;
   }
+  .gallery-container p span:not(:first-child) {
+    padding-left: 1rem;
+  }
+  .gallery-container p span:not(:last-child) {
+    padding-right: 1rem;
+  }
   .contact-container h1 {
     max-height: 100%;
     font-size: 9vw;
@@ -775,6 +796,9 @@ footer .bottom-footer a {
   .hero-contianer .hero-text h1 {
     font-size: 1.2rem;
     line-height: 1.5rem;
+  }
+  .gallery-container p {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

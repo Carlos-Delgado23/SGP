@@ -245,6 +245,19 @@ h2 {
     margin-top: .5rem;
   }
 
+  p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    span:not(:last-child) {
+      border-right: 1px solid $primary-color;
+      padding-right: 2rem;
+    }
+    span:not(:first-child){
+      border-left: 1px solid $primary-color;
+      padding-left: 2rem;
+    }
+  }
+
   .cards-container {
     display: flex;
     justify-content: center;
@@ -613,6 +626,15 @@ $break-tablet: 768px;
     h1{
       font-size: 9vw;
     }
+
+    p {
+      span:not(:first-child){
+        padding-left: 1rem;
+      }
+      span:not(:last-child) {
+        padding-right: 1rem;
+      }
+    }
   }
 
   .contact-container{
@@ -693,9 +715,10 @@ $break-tablet: 768px;
       }
     }
   }
+
+  .gallery-container {
+    p {
+      display: none;
+    }
+  }
 }
-
-
-
-
-
