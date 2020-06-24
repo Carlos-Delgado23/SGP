@@ -241,7 +241,8 @@ h2 {
   .underline {
     border: 1px solid $primary-color;
     border-radius: 10px;
-    width: 20%;
+    width: 25%;
+    margin-top: .5rem;
   }
 
   .cards-container {
@@ -309,7 +310,8 @@ h2 {
   .underline {
     border: 1px solid $dark-color;
     border-radius: 10px;
-    width: 20%;
+    width: 25%;
+    margin-top: .5rem;
   }
 
   .form-container {
@@ -390,8 +392,9 @@ h2 {
       border-radius: 5px;
       color: #fff;
       font-family: 'Montserrat', sans-serif;
-      margin-top: 1.3em;
-      padding: .5em;
+      font-size: 1rem;
+      margin-top: 2em;
+      padding: 0.5rem 0;
       text-transform: uppercase;
       width: 30%;
       transition: 0.5s all;
@@ -434,7 +437,8 @@ h2 {
   .underline {
     border: 1px solid $primary-color;
     border-radius: 10px;
-    width: 20%;
+    width: 25%;
+    margin-top: .5rem;
   }
 
   .about-content {
