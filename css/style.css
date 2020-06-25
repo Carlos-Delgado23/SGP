@@ -280,20 +280,68 @@ h2 {
   padding-left: 2rem;
 }
 
-.gallery-container .gallery {
-  margin: 2rem auto 5rem auto;
-  width: 100%;
+.gallery-container .imgs-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+  height: 100vh;
+  width: 80%;
+  margin-top: 2rem;
 }
 
-.gallery-container .gallery img {
-  max-width: 20%;
-  min-width: 20%;
-  max-height: 25%;
-  min-height: 25%;
+.gallery-container .imgs-wrapper img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery-container .gallery {
+  background-color: #171717;
+  overflow: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.gallery-container .gallery-img {
+  scroll-snap-align: start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  min-height: 100vh;
+  max-height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.gallery-container .lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.gallery-container .lil-nav a {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.gallery-container .lil-nav-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.gallery-container .lil-nav-img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 
 /* Contact Form
