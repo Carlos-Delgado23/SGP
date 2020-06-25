@@ -259,6 +259,20 @@ h2 {
     }
   }
 
+  .gallery {
+    margin: 2rem auto 5rem auto;
+    width: 100%;
+    img {
+      max-width: 20%;
+      min-width: 20%;
+      max-height: 25%;
+      min-height: 25%;
+      object-fit: cover;
+      flex-wrap: wrap;
+    }
+  }
+
+
   // .cards-container {
   //   display: flex;
   //   justify-content: center;

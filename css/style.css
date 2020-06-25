@@ -280,6 +280,22 @@ h2 {
   padding-left: 2rem;
 }
 
+.gallery-container .gallery {
+  margin: 2rem auto 5rem auto;
+  width: 100%;
+}
+
+.gallery-container .gallery img {
+  max-width: 20%;
+  min-width: 20%;
+  max-height: 25%;
+  min-height: 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 /* Contact Form
 ---------------------------------------------------------*/
 .contact-container {
