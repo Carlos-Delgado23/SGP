@@ -224,7 +224,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   text-transform: uppercase;
 
@@ -258,44 +259,44 @@ h2 {
     }
   }
 
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    margin: 4rem auto 5rem auto;
+  // .cards-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 95%;
+  //   margin: 4rem auto 5rem auto;
 
 
-    .card {
-      position: relative;
-      width: 24rem;
-      height: 42rem;
-      border: 2px solid $primary-color;
-      margin: 0 .5em;
+  //   .card {
+  //     position: relative;
+  //     width: 24rem;
+  //     height: 42rem;
+  //     border: 2px solid $primary-color;
+  //     margin: 0 .5em;
 
-        img { 
-          width: 100%; 
-          height: 100%; 
-          margin-left: auto;
-          margin-right: auto;
-          object-fit: cover; 
-          z-index: 0;
-          opacity: .6;
-      }
+  //       img { 
+  //         width: 100%; 
+  //         height: 100%; 
+  //         margin-left: auto;
+  //         margin-right: auto;
+  //         object-fit: cover; 
+  //         z-index: 0;
+  //         opacity: .6;
+  //     }
 
-      h3 {
-        font-size: 100%;
-        font-weight: 100;
-        position: absolute;
-        top: 47%;
-        left:0;
-        right:0;
-        letter-spacing: .8em;
-        padding-left: .8em;
-        z-index: 1;
-      }
-    }
-  }
+  //     h3 {
+  //       font-size: 100%;
+  //       font-weight: 100;
+  //       position: absolute;
+  //       top: 47%;
+  //       left:0;
+  //       right:0;
+  //       letter-spacing: .8em;
+  //       padding-left: .8em;
+  //       z-index: 1;
+  //     }
+  //   }
+  // }
 }
 
 
@@ -306,6 +307,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   min-height: 100%;
   text-transform: uppercase;
 
@@ -317,6 +319,15 @@ h2 {
     padding-left: .8em;
     margin-top: 3rem;
     text-align: center;
+  }
+
+  p {
+    color: $dark-color;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+    text-align: center;
+    width: 80%;
+
   }
 
   
