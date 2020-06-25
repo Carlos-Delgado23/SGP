@@ -263,7 +263,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
-    // overflow: hidden;
     height: 100vh;
     width: 80%;
     margin-top: 2rem;
@@ -283,7 +282,8 @@ h2 {
   }
 
   .gallery-img {
-    border: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
     scroll-snap-align: start;
     margin-left: auto;
     margin-right: auto;

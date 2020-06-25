@@ -306,7 +306,8 @@ h2 {
 }
 
 .gallery-container .gallery-img {
-  border: 10px solid #fff;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
   scroll-snap-align: start;
   margin-left: auto;
   margin-right: auto;
