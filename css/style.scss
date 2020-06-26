@@ -246,7 +246,7 @@ h2 {
     margin-top: .5rem;
   }
 
-  p {
+  .gallery-p {
     font-size: 1rem;
     margin-top: 2rem;
     span:not(:last-child) {
@@ -314,19 +314,6 @@ h2 {
       filter: saturate(1);
     }
   }
-
-  // .gallery {
-  //   margin: 2rem auto 5rem auto;
-  //   width: 100%;
-  //   img {
-  //     max-width: 20%;
-  //     min-width: 20%;
-  //     max-height: 25%;
-  //     min-height: 25%;
-  //     object-fit: cover;
-  //     flex-wrap: wrap;
-  //   }
-  // }
 }
 
 
@@ -647,7 +634,50 @@ $break-small-mobile: 321px;
 $break-mobile: 480px;
 $break-tablet: 768px;
 
+@media screen and (max-width: $break-tablet){
+  .gallery-container {
+    .imgs-wrapper {
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: auto;
+      width: 95%;
+      margin-bottom: 0;
+    }
 
+    .gallery {
+      display: flex;
+      align-content: center;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: y mandatory;
+      min-height: 70vh;
+    }
+
+    .gallery-img {
+      display: flex;
+      align-self: center;
+      border: none;
+      min-width: 100vw;
+      object-fit: contain;
+      margin-right: 1rem;
+      margin-bottom: 0;
+    }
+
+    .lil-nav {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: flex;
+      grid-row-start: 2;
+      min-height: 200px;
+
+      a{
+        height: 8rem;
+        min-width: 45vw;
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: $break-mobile){
   .nav-container {
@@ -655,25 +685,24 @@ $break-tablet: 768px;
   }
 
   .gallery-container{
-    .cards-container {
-      flex-direction: column;
-
-      .card {
-        width: 90%;
-        height: 21rem;
-      }
-    }
 
     h1{
       font-size: 9vw;
     }
 
-    p {
+    .gallery-p {
       span:not(:first-child){
         padding-left: 1rem;
       }
       span:not(:last-child) {
         padding-right: 1rem;
+      }
+    }
+
+    .lil-nav {
+      height: 10%;
+      a {
+        height: 5rem;
       }
     }
   }
@@ -684,10 +713,16 @@ $break-tablet: 768px;
       font-size: 9vw;
     }
 
+    p {
+      font-size: .9rem;
+      margin-top: .8rem;
+    }
+
     .form-container {
       max-height: 100%;
       width: 90%;
       padding: 1rem;
+      margin-top: 2rem;
 
       .name, .email,
       .phone, .comment {
