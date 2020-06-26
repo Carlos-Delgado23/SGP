@@ -267,7 +267,7 @@ h2 {
 
 .gallery-container .gallery-p {
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .gallery-container .gallery-p span:not(:last-child) {
@@ -288,7 +288,7 @@ h2 {
   grid-gap: 10px;
   height: 100vh;
   width: 80%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -392,6 +392,7 @@ h2 {
 }
 
 .contact-container .form-container {
+  font-family: 'Montserrat', sans-serif;
   background-color: #171717;
   border: 2px solid #171717;
   border-radius: 10px;
@@ -443,7 +444,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   margin-top: .3rem;
-  padding: .8rem;
+  padding: .5rem;
 }
 
 .contact-container .form-container select {
@@ -761,7 +762,7 @@ footer .bottom-footer a {
     overflow-y: hidden;
     -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
-    min-height: 70vh;
+    min-height: 65vh;
   }
   .gallery-container .gallery-img {
     display: -webkit-box;
