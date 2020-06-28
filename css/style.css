@@ -271,12 +271,10 @@ h2 {
 }
 
 .gallery-container .gallery-p span:not(:last-child) {
-  border-right: 1px solid #ffe01b;
   padding-right: 2rem;
 }
 
 .gallery-container .gallery-p span:not(:first-child) {
-  border-left: 1px solid #ffe01b;
   padding-left: 2rem;
 }
 
@@ -362,7 +360,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 100%;
+  min-height: auto;
   text-transform: uppercase;
 }
 
@@ -406,8 +404,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4rem auto 5rem auto;
-  padding: 2rem;
+  margin: 1rem auto 2rem auto;
+  padding: 1%;
 }
 
 .contact-container .form-container > div {
@@ -443,8 +441,8 @@ h2 {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  margin-top: .3rem;
-  padding: .5rem;
+  margin-top: 1%;
+  padding: 2%;
 }
 
 .contact-container .form-container select {
@@ -562,29 +560,6 @@ h2 {
   height: 100%;
 }
 
-.about-container .about-content .img-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 24rem;
-  height: 32rem;
-  margin: 2em;
-  overflow: hidden;
-}
-
-.about-container .about-content .img-container img {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .about-container p {
   color: #fff;
   padding: 2rem;
@@ -614,7 +589,7 @@ footer .footer-container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 95%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1em 0 0 0;
 }
 
@@ -744,6 +719,9 @@ footer .bottom-footer a {
 /* Media Query
 ---------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+  h2 {
+    line-height: 2.3rem;
+  }
   .gallery-container .imgs-wrapper {
     -ms-grid-rows: 2fr 1fr;
         grid-template-rows: 2fr 1fr;
@@ -751,6 +729,9 @@ footer .bottom-footer a {
         grid-template-columns: auto;
     width: 95%;
     margin-bottom: 0;
+  }
+  .gallery-container .underline {
+    width: 85%;
   }
   .gallery-container .gallery {
     display: -webkit-box;
@@ -785,7 +766,7 @@ footer .bottom-footer a {
     display: flex;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    min-height: 200px;
+    height: 8rem;
   }
   .gallery-container .lil-nav a {
     height: 8rem;
@@ -799,8 +780,18 @@ footer .bottom-footer a {
   .nav-container {
     min-width: 22rem;
   }
+  h2 {
+    line-height: 2.3rem;
+  }
+  .hero-contianer .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .gallery-container h1 {
     font-size: 9vw;
+  }
+  .gallery-container .underline {
+    width: 85%;
   }
   .gallery-container .gallery-p span:not(:first-child) {
     padding-left: 1rem;
@@ -808,8 +799,11 @@ footer .bottom-footer a {
   .gallery-container .gallery-p span:not(:last-child) {
     padding-right: 1rem;
   }
+  .gallery-container .imgs-wrapper {
+    height: 85%;
+  }
   .gallery-container .lil-nav {
-    height: 10%;
+    height: 5rem;
   }
   .gallery-container .lil-nav a {
     height: 5rem;
@@ -838,17 +832,23 @@ footer .bottom-footer a {
     width: 40%;
   }
   .about-container {
-    max-height: 100%;
+    height: auto;
   }
   .about-container h1 {
     font-size: 9vw;
   }
   .about-container .about-content {
-    margin: 2rem auto;
+    margin: 1rem auto;
+  }
+  .about-container .about-content p {
+    font-size: 1.2rem;
   }
   .about-container p {
     padding-top: 2rem;
     width: 95%;
+  }
+  footer {
+    height: auto;
   }
   footer .top-footer {
     -webkit-box-orient: vertical;
@@ -883,8 +883,22 @@ footer .bottom-footer a {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
-  .gallery-container p {
+  .gallery-p {
     display: none;
+  }
+  .about-container .about-content p {
+    font-size: 1rem;
+  }
+  .about-container p {
+    height: 100%;
+    padding-top: .5rem;
+  }
+  footer .top-footer .logo-div, footer .top-footer ul {
+    margin-bottom: .5rem;
+  }
+  footer small {
+    margin-top: .5rem;
+    padding-bottom: .5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

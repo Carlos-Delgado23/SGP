@@ -250,11 +250,9 @@ h2 {
     font-size: 1rem;
     margin-top: 1rem;
     span:not(:last-child) {
-      border-right: 1px solid $primary-color;
       padding-right: 2rem;
     }
     span:not(:first-child){
-      border-left: 1px solid $primary-color;
       padding-left: 2rem;
     }
   }
@@ -325,7 +323,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100%;
+  min-height: auto;
   text-transform: uppercase;
 
   h1 {
@@ -363,8 +361,9 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4rem auto 5rem auto;
-    padding: 2rem;
+    // height: 100%;
+    margin: 1rem auto 2rem auto;
+    padding: 1%;
 
     & > div {
       margin: .5em;
@@ -394,8 +393,8 @@ h2 {
       color: #fff;
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
-      margin-top: .3rem;
-      padding: .5rem;
+      margin-top: 1%;
+      padding: 2%;
     }
 
     select {
@@ -491,23 +490,23 @@ h2 {
     width: 100%;
     height: 100%;
 
-    .img-container {
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 24rem;
-      height: 32rem;
-      margin: 2em;
-      overflow: hidden;
+    // .img-container {
+    //   position: relative;
+    //   display: flex;
+    //   align-items: center;
+    //   width: 24rem;
+    //   height: 32rem;
+    //   margin: 2em;
+    //   overflow: hidden;
 
-      img {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
+    //   img {
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+    // }
   }
 
   p {
@@ -532,7 +531,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 95%;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 1em 0 0 0;
   }
 
@@ -636,12 +635,20 @@ $break-mobile: 480px;
 $break-tablet: 768px;
 
 @media screen and (max-width: $break-tablet){
+  h2 {
+    line-height: 2.3rem;
+  }
+  
   .gallery-container {
     .imgs-wrapper {
       grid-template-rows: 2fr 1fr;
       grid-template-columns: auto;
       width: 95%;
       margin-bottom: 0;
+    }
+
+    .underline {
+      width: 85%;
     }
 
     .gallery {
@@ -668,7 +675,7 @@ $break-tablet: 768px;
       overflow-y: hidden;
       display: flex;
       grid-row-start: 2;
-      min-height: 200px;
+      height: 8rem;
 
       a{
         height: 8rem;
@@ -685,13 +692,31 @@ $break-tablet: 768px;
     min-width: 22rem;
   }
 
+  h2 {
+    line-height: 2.3rem;
+  }
+
+  .hero-contianer {
+    .hero-text{
+      h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
   .gallery-container{
 
     h1{
       font-size: 9vw;
     }
 
+    .underline {
+      width: 85%;
+    }
+
     .gallery-p {
+
       span:not(:first-child){
         padding-left: 1rem;
       }
@@ -700,8 +725,12 @@ $break-tablet: 768px;
       }
     }
 
+    .imgs-wrapper {
+      height: 85%;
+    }
+
     .lil-nav {
-      height: 10%;
+      height: 5rem;
       a {
         height: 5rem;
       }
@@ -739,14 +768,18 @@ $break-tablet: 768px;
   }
 
   .about-container {
-    max-height: 100%;
+    height: auto;
 
     h1 {
       font-size: 9vw;
     }
 
     .about-content {
-      margin: 2rem auto;
+      margin: 1rem auto;
+
+      p {
+        font-size: 1.2rem;
+      }
     }
 
     p{
@@ -756,6 +789,7 @@ $break-tablet: 768px;
   }
 
   footer {
+    height: auto;
     .top-footer {
       flex-direction: column;
 
@@ -776,13 +810,10 @@ $break-tablet: 768px;
   .nav-container {
     min-width: 15rem;
   }
-
   h2 {
     font-size: 12vw;
     line-height: 2rem;
   }
-
-
   .hero-contianer {
     .hero-text {
       float: none;
@@ -793,9 +824,29 @@ $break-tablet: 768px;
     }
   }
 
-  .gallery-container {
-    p {
+  .gallery-p {
       display: none;
     }
-  }
+    .about-container {
+      .about-content {
+        p {
+          font-size: 1rem;
+        }
+      }
+      p{
+       height: 100%;
+        padding-top: .5rem;
+      }
+    }
+    footer {
+      .top-footer {
+      .logo-div, ul {
+          margin-bottom: .5rem;
+        }
+      }
+      small {
+        margin-top: .5rem;
+        padding-bottom: .5rem;
+      }
+    }
 }
