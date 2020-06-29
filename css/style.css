@@ -352,6 +352,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -397,6 +398,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -833,7 +835,6 @@ footer .bottom-footer a {
     height: 5rem;
   }
   .contact-container h1 {
-    max-height: 100%;
     font-size: 9vw;
   }
   .contact-container p {

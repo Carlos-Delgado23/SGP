@@ -320,6 +320,7 @@ h2 {
 .contact-container {
   background-color: $primary-color;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -359,6 +360,7 @@ h2 {
     border: 2px solid $dark-color;
     border-radius: 10px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
@@ -738,8 +740,9 @@ $break-tablet: 768px;
   }
 
   .contact-container{
+    // max-height: 100%;
     h1 {
-      max-height: 100%;
+
       font-size: 9vw;
     }
 
