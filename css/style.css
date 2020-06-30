@@ -243,7 +243,6 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -298,6 +297,7 @@ h2 {
 .gallery-container .gallery {
   background-color: #171717;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -306,7 +306,7 @@ h2 {
 .gallery-container .gallery-img {
   border-right: 10px solid #fff;
   border-left: 10px solid #fff;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -407,7 +407,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  margin: 1rem auto 2rem auto;
+  margin: 1rem auto 4rem auto;
   padding: 1%;
 }
 
@@ -434,10 +434,8 @@ h2 {
   width: 48%;
 }
 
-.contact-container .form-container input[type=text],
-.contact-container .form-container input[type=tel],
-.contact-container .form-container input[type=email],
-.contact-container .form-container textarea, .contact-container .form-container select {
+.contact-container .form-container input[type=text], .contact-container .form-container input[type=tel],
+.contact-container .form-container input[type=email], .contact-container .form-container textarea, .contact-container .form-container select {
   background-color: #202020;
   border: none;
   border-radius: 5px;
@@ -446,6 +444,11 @@ h2 {
   font-size: 1rem;
   margin-top: .5rem;
   padding: .5rem;
+}
+
+.contact-container .form-container a:focus, .contact-container .form-container button:focus,
+.contact-container .form-container input:focus, .contact-container .form-container textarea:focus {
+  outline: none;
 }
 
 .contact-container .form-container select {
@@ -588,9 +591,10 @@ h2 {
 
 .about-container p {
   color: #fff;
+  font-size: 2rem;
   padding: 2rem;
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 /* Footer
@@ -753,11 +757,9 @@ footer .bottom-footer a {
         grid-template-rows: 2fr 1fr;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    width: 95%;
+    width: 100vw;
+    height: 100vh;
     margin-bottom: 0;
-  }
-  .gallery-container .underline {
-    width: 85%;
   }
   .gallery-container .gallery {
     display: -webkit-box;
@@ -769,7 +771,6 @@ footer .bottom-footer a {
     overflow-y: hidden;
     -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
-    min-height: 65vh;
   }
   .gallery-container .gallery-img {
     display: -webkit-box;
@@ -779,6 +780,8 @@ footer .bottom-footer a {
         align-self: center;
     border: none;
     min-width: 100vw;
+    min-height: 85vh;
+    max-height: 85vh;
     -o-object-fit: contain;
        object-fit: contain;
     margin-right: 1rem;
@@ -799,6 +802,14 @@ footer .bottom-footer a {
     min-width: 45vw;
     margin-right: 10px;
     margin-bottom: 0;
+  }
+  .gallery-container .underline,
+  .contact-container .underline,
+  .about-container .underline {
+    width: 85%;
+  }
+  .about-container p {
+    width: 75%;
   }
 }
 
@@ -825,8 +836,12 @@ footer .bottom-footer a {
   .gallery-container .gallery-p span:not(:last-child) {
     padding-right: 1rem;
   }
+  .gallery-container .gallery-img {
+    min-height: 85vh;
+    max-height: 85vh;
+  }
   .gallery-container .imgs-wrapper {
-    height: 85%;
+    height: 85vh;
   }
   .gallery-container .lil-nav {
     height: 5rem;
@@ -857,7 +872,7 @@ footer .bottom-footer a {
     width: 40%;
   }
   .about-container {
-    height: auto;
+    min-height: 70%;
   }
   .about-container h1 {
     font-size: 9vw;
