@@ -59,17 +59,17 @@
         return input;
     };
 
-    // RANDOM ORDER LIL NAV GALLERY //
+    // RANDOM ORDER LIL NAV GALLERY & FULL SIZE GALLERY //
     var lilNavGallery = $(".anchor-nav-img");
+    var galleryImg = $(".gallery-img");
+
     for (var i = 0; i < lilNavGallery.length; i++) {
         var target = Math.floor(Math.random() * lilNavGallery.length - 1) + 1;
         var target2 = Math.floor(Math.random() * lilNavGallery.length - 1) + 1;
+
         lilNavGallery.eq(target).before(lilNavGallery.eq(target2));
+        galleryImg.eq(target).before(galleryImg.eq(target2));
     };
-
-
-
-
 
     // MAY USE FUNCTION IN THE FUTURE //
     //$("#phone").on("paste", function () {
