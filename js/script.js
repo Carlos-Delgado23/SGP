@@ -12,8 +12,11 @@
                 foneFormattingFunction(dInput);
             }
         }
-    }); function foneFormattingFunction(input) {
-        let phoneInputHtml = $("#phone"); switch (input.length) {
+    });
+
+    function foneFormattingFunction(input) {
+        let phoneInputHtml = $("#phone");
+        switch (input.length) {
             case 1:
                 phoneInputHtml.val("(" + input);
                 break;
@@ -36,7 +39,9 @@
                 phoneInputHtml.val(input.substring(0, 14));
                 break;
         }
-    } function backspace(input) {
+    };
+
+    function backspace(input) {
         switch (input.length) {
             case 1:
                 input = "";
@@ -52,7 +57,22 @@
                 break;
         }
         return input;
-    } //$("#phone").on("paste", function () {
+    };
+
+    // RANDOM ORDER LIL NAV GALLERY //
+    var lilNavGallery = $(".anchor-nav-img");
+    for (var i = 0; i < lilNavGallery.length; i++) {
+        var target = Math.floor(Math.random() * lilNavGallery.length - 1) + 1;
+        var target2 = Math.floor(Math.random() * lilNavGallery.length - 1) + 1;
+        lilNavGallery.eq(target).before(lilNavGallery.eq(target2));
+    };
+
+
+
+
+
+    // MAY USE FUNCTION IN THE FUTURE //
+    //$("#phone").on("paste", function () {
     //     event.preventDefault();
     // });
 })();
