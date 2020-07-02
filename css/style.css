@@ -277,6 +277,10 @@ h2 {
   padding-left: 2rem;
 }
 
+.gallery-container .arrows {
+  color: #fff;
+}
+
 .gallery-container .imgs-wrapper {
   display: -ms-grid;
   display: grid;
@@ -752,6 +756,9 @@ footer .bottom-footer a {
   h2 {
     line-height: 2.3rem;
   }
+  .gallery-container .fas {
+    margin-top: 1rem;
+  }
   .gallery-container .imgs-wrapper {
     -ms-grid-rows: 2fr 1fr;
         grid-template-rows: 2fr 1fr;
@@ -799,7 +806,7 @@ footer .bottom-footer a {
   }
   .gallery-container .lil-nav a {
     height: 8rem;
-    min-width: 45vw;
+    min-width: 28vw;
     margin-right: 10px;
     margin-bottom: 0;
   }
