@@ -342,15 +342,27 @@ h2 {
     text-align: center;
   }
 
-  p {
+  p, a {
     color: $dark-color;
     font-family: 'Montserrat', sans-serif;
     margin-top: 2rem;
     text-align: center;
     width: 80%;
-
   }
 
+  a {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease all;
+
+    &:hover {
+      opacity: .8;
+      transform: scale(1.05);
+      cursor: pointer;
+      
+    }
+  }
   
   .underline {
     border: 1px solid $dark-color;
@@ -444,7 +456,8 @@ h2 {
       color: #fff;
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
-      margin-top: 2em;
+      margin-top: 1em;
+      margin-bottom: .8em;
       padding: 0.5rem 0;
       text-transform: uppercase;
       width: 30%;
@@ -774,6 +787,10 @@ $break-tablet: 768px;
     p {
       font-size: .9rem;
       margin-top: .8rem;
+    }
+
+    a {
+      font-size: .8rem;
     }
 
     .form-container {

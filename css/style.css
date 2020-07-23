@@ -379,12 +379,27 @@ h2 {
   text-align: center;
 }
 
-.contact-container p {
+.contact-container p, .contact-container a {
   color: #171717;
   font-family: 'Montserrat', sans-serif;
   margin-top: 2rem;
   text-align: center;
   width: 80%;
+}
+
+.contact-container a {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.contact-container a:hover {
+  opacity: .8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
 }
 
 .contact-container .underline {
@@ -501,7 +516,8 @@ h2 {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: .8em;
   padding: 0.5rem 0;
   text-transform: uppercase;
   width: 30%;
@@ -862,6 +878,9 @@ footer .bottom-footer a {
   .contact-container p {
     font-size: .9rem;
     margin-top: .8rem;
+  }
+  .contact-container a {
+    font-size: .8rem;
   }
   .contact-container .form-container {
     max-height: 100%;
