@@ -892,6 +892,22 @@ footer .bottom-footer a {
   .contact-container .form-container .phone, .contact-container .form-container .comment {
     width: 98%;
   }
+  .contact-container .form-container .intrest-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    width: 98%;
+  }
+  .contact-container .form-container .intrest-location #intrest,
+  .contact-container .form-container .intrest-location .location {
+    width: 100%;
+  }
+  .contact-container .form-container .intrest-location .intrest,
+  .contact-container .form-container .intrest-location .location {
+    margin: .5em 0;
+  }
   .contact-container .form-container input[type=submit] {
     margin-top: .8em;
     margin-bottom: .2em;
