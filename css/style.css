@@ -436,7 +436,8 @@ h2 {
 }
 
 .contact-container .form-container .name, .contact-container .form-container .email,
-.contact-container .form-container .phone, .contact-container .form-container .comment {
+.contact-container .form-container .phone, .contact-container .form-container .comment,
+.contact-container .form-container .form-of-contact {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,6 +509,15 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+}
+
+.contact-container .form-container #form-of-contact {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-container .form-container #form-of-contact:hover {
+  cursor: pointer;
 }
 
 .contact-container .form-container input[type=submit] {
@@ -890,7 +900,8 @@ footer .bottom-footer a {
     margin-top: 2rem;
   }
   .contact-container .form-container .name, .contact-container .form-container .email,
-  .contact-container .form-container .phone, .contact-container .form-container .comment {
+  .contact-container .form-container .phone, .contact-container .form-container .comment,
+  .contact-container .form-container .form-of-contact {
     width: 98%;
   }
   .contact-container .form-container .intrest-location {
