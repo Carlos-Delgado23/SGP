@@ -75,4 +75,14 @@
     //$("#phone").on("paste", function () {
     //     event.preventDefault();
     // });
+
+    function isNotEmpty(caller) {
+        if (caller.val() == "") {
+            caller.css('border', '1px solid red');
+            return false;
+        } else
+            caller.css('border', '');
+
+        return true;
+    }
 })();

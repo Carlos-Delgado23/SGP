@@ -388,7 +388,8 @@ h2 {
 }
 
 .contact-container a {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
   -webkit-transition: 0.3s ease all;
