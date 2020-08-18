@@ -427,11 +427,11 @@
       SweetGoldPhotography@gmail.com</a>
 
     <!-- START OF FROM -->
-    <form name="contact-inq" action="" method="POST" class="form-container" netlify netlify-honeypot="bot-field">
+    <form name="contact-inq" action="" method="POST" class="form-container" netlify data-netlify-recaptcha="true">
       <!-- honeypot -->
-      <p class="hidden">
+      <!-- <p class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-      </p>
+      </p> -->
 
       <!-- name -->
       <div class="name">
@@ -487,6 +487,10 @@
         <textarea name="message" id="message" cols="30" rows="6" placeholder="Message"></textarea>
       </div>
 
+      <!-- reCaptcha -->
+      <div data-netlify-recaptcha="true"></div>
+
+      <!-- submit -->
       <input type="submit" value="Submit" onclick="sendEmail()">
     </form>
     <!-- END OF FORM -->

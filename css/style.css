@@ -410,10 +410,6 @@ h2 {
   margin-top: .5rem;
 }
 
-.contact-container .hidden {
-  visibility: hidden;
-}
-
 .contact-container .form-container {
   font-family: 'Montserrat', sans-serif;
   background-color: #171717;
