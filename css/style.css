@@ -411,7 +411,7 @@ h2 {
 }
 
 .contact-container .hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .contact-container .form-container {
