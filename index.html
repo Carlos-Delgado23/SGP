@@ -426,7 +426,12 @@
     <br> <a href="mailto:sweetgoldphotography@gmail.com">
       SweetGoldPhotography@gmail.com</a>
 
-    <form action="https://mailthis.to/sweetgoldphotography@gmail.com" method="POST" class="form-container">
+    <!-- START OF FROM -->
+    <form name="contact-inq" action="" method="POST" class="form-container" netlify netlify-honeypot="bot-field">
+      <!-- honeypot -->
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
 
       <!-- name -->
       <div class="name">
@@ -484,6 +489,7 @@
 
       <input type="submit" value="Submit" onclick="sendEmail()">
     </form>
+    <!-- END OF FORM -->
   </div>
   <!--------- CONTACT FORM ENDS --------->
 
